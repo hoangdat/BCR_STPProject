@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/relLstViewContact"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="50dp"
+        android:background="#FFFFFF" >
+
+        <com.stpproject.viewutil.IndexSTPListView
+            android:id="@+id/lstViewContact"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@drawable/list_divider"
+            android:dividerHeight="0.5dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="none" >
+        </com.stpproject.viewutil.IndexSTPListView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/actionMain"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/split_action_main_height"
+        android:layout_alignParentBottom="true"
+        android:background="#5474BD"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="@dimen/width_for_linear_weight"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/padding_top_split_main" >
+
+            <ImageButton
+                android:id="@+id/imgbtnGetGalleryImg"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:background="@null"
+                android:contentDescription="@string/label_gallery"
+                android:scaleType="fitXY"
+                android:src="@drawable/imagealbum_48" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/width_vertical_line"
+            android:layout_height="@dimen/height_vertical_line"
+            android:layout_gravity="center_vertical"
+            android:background="#D5DAD8" />
+
+        <LinearLayout
+            android:layout_width="@dimen/width_for_linear_weight"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/padding_top_split_main" >
+
+            <ImageButton
+                android:id="@+id/imgbtnCamera"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:background="@null"
+                android:contentDescription="@string/label_camera"
+                android:scaleType="fitXY"
+                android:src="@drawable/camera_48" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Business Card</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="label_gallery">Gallery</string>
+    <string name="label_camera">Camera</string>
+    <string name="label_sms">SMS</string>
+    <string name="label_email">E-Mail</string>
+    <string name="label_share">Share</string>
+    <string name="label_delete">Delete</string>
+    <string name="action_search_name_title">Search By Name</string>
+    <string name="action_search_company_title">Search By Company</string>
+    <string name="label_image_contact">Image Profile</string>
+    <string name="label_call">Call</string>
+    <string name="label_phone">Phone</string>
+    <string name="label_web">Website</string>
+    <string name="label_address">Address</string>
+    <string name="label_company">Company</string>
+    <string name="save_contact_detail">Save to contact</string>
+    <string name="share_detail">Share</string>
+    <string name="delete_detail">Delete</string>
+
+    <item name="ID_STORE_VIEW" type="id"></item>
+    <item name="ID_STORE_TYPE" type="id"></item>
+
+    <string name="title_activity_details_contact">DetailsContactActivity</string>
+    <string name="title_activity_edit_contacts">EditContactsActivity</string>
+    <string name="title_activity_processing">ProcessingActivity</string>
+    <string name="message_not_know_where">Not able to get Data</string>
+
+</resources>

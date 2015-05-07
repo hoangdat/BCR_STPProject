@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp" >
+
+    <EditText
+        android:id="@+id/edtPhoneNumberEDIT"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="25dp"
+        android:layout_toLeftOf="@+id/btnImgSubstractPhoneEDIT"
+        android:hint="Phone number"
+        android:inputType="phone"
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:id="@+id/btnImgSubstractPhoneEDIT"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/edtPhoneNumber"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/editminus" />
+
+    <Spinner
+        android:id="@+id/spinTypePhone"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>

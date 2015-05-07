@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="400"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+    <item
+        android:id="@+id/save_contact_detail"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/save_contact_detail">
+    </item>
+    <item
+        android:id="@+id/share_detail"
+        android:orderInCategory="300"
+        android:showAsAction="never"
+        android:title="@string/share_detail">
+    </item>
+    <item
+        android:id="@+id/delete_detail"
+        android:orderInCategory="200"
+        android:showAsAction="never"
+        android:title="@string/delete_detail">
+    </item>
+
+</menu>

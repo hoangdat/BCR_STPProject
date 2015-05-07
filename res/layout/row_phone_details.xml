@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp" >
+
+    <TextView
+        android:id="@+id/txtPhoneNumberDetails"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="50dp"
+    
+        android:textSize="18sp"
+        android:text="abc"
+        android:lines="1"
+        />
+
+    <ImageButton
+        android:id="@+id/btnImgCallDetails"
+        android:layout_toLeftOf="@+id/txtPhoneNumberDetails"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@+id/txtPhoneNumberDetails"
+       
+        android:layout_marginRight="1dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/editphone" />
+
+    <TextView
+        android:id="@+id/tvTypePhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"
+        android:text="Telephone"
+        android:textStyle="italic"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

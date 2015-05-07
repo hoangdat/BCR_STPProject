@@ -1,0 +1,225 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#DCDCDC"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imgContact"
+        android:layout_width="fill_parent"
+        android:layout_height="220dp"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/label_image_contact"
+        android:scaleType="fitXY"
+        android:src="@drawable/ste" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="-220dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                style="@style/BackgroundOverlay"
+                android:layout_width="fill_parent"
+                android:layout_height="220dp"
+                android:alpha="0.7"
+                android:background="#7f000000" >
+
+                <TextView
+                    android:id="@+id/txtContactName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="150dp"
+                    android:background="#bf000000"
+                    android:gravity="center"
+                    android:text="Tran Thien Phuc"
+                    android:textColor="@android:color/white"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/txtCompanyName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/txtContactName"
+                    android:background="#bf000000"
+                    android:gravity="center"
+                    android:text="Cong ty VTC Viet Nam"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="#DCDCDC"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/lnrFeature"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/imgContact"
+                    android:background="#E5F1EC"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/btnImgCall"
+                        android:layout_width="161dp"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="4dp"
+                        android:background="@null"
+                        android:contentDescription="@string/label_call"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/editcall" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="29dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="#D5DAD8" />
+
+                    <ImageButton
+                        android:id="@+id/btnImgMessage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="4dp"
+                        android:layout_weight="19.48"
+                        android:background="@null"
+                        android:contentDescription="@string/label_sms"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/editsms" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnrInfo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/lnrFeature"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_label"
+                        android:orientation="horizontal"
+                        android:paddingRight="@dimen/padding_left_label" >
+
+                        <TextView
+                            android:id="@+id/txtPhoneLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/margin_label"
+                            android:text="@string/label_phone"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnrPhone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/custom_list_phone"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_label"
+                        android:orientation="horizontal"
+                        android:paddingRight="@dimen/padding_left_label" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/margin_label"
+                            android:text="@string/label_email"
+                            android:textSize="@dimen/label_text_size_label"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnrEmail"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/custom_list_phone"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_label"
+                        android:orientation="horizontal"
+                        android:paddingRight="@dimen/padding_left_label" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/margin_label"
+                            android:text="@string/label_web"
+                            android:textSize="@dimen/label_text_size_label"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnrWeb"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/custom_list_phone"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_label"
+                        android:orientation="horizontal"
+                        android:paddingRight="@dimen/padding_left_label" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/margin_label"
+                            android:text="@string/label_address"
+                            android:textSize="@dimen/label_text_size_label"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnrAddress"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/custom_list_phone"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

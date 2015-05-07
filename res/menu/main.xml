@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="300"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+    <item
+        android:id="@+id/action_seachbyname"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_search_name_title">
+    </item>
+    <item
+        android:id="@+id/action_seachbycompany"
+        android:orderInCategory="200"
+        android:showAsAction="never"
+        android:title="@string/action_search_company_title">
+    </item>
+
+</menu>

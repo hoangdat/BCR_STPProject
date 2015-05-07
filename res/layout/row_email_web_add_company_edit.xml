@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp" >
+
+    <EditText
+        android:id="@+id/edtInfoEDIT"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="35dp"
+        android:layout_gravity="center_vertical"
+        android:textSize="18sp"/>
+
+    <ImageButton
+        android:id="@+id/btnImgSubstractInfoEDIT"
+        android:layout_toLeftOf="@+id/edtPhoneNumber"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@+id/edtPhoneNumber"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="1dp"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/editminus" />
+
+</RelativeLayout>

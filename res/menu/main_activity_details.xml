@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/itemDelete"
+        android:title="Delete">
+    </item>
+    <item
+        android:id="@+id/itemSend"
+        android:title="Send">
+        <menu>
+            <item
+                android:id="@+id/itemSendMail"
+                android:title="Send by Mail"/>
+            <item
+                android:id="@+id/itemSendSms"
+                android:title="Send by Sms"/>
+        </menu>
+    </item>
+
+</menu>
